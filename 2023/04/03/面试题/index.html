@@ -1,165 +1,164 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>面试题 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Java面向对象有哪些特征，如何应用​		面向对象编程是利用类和对象编程的一种思想。万物可归类，类是对于世界事物的高度抽象 ，不同的事物之间有不同的关系 ，一个类自身与外界的封装关系，一个父类和子类的继承关系， 一个类和多个类的多态关系。万物皆对象，对象是具体的世界事物，面向对象的三大特征封装，继承，多态。封装，封装说明一个类行为和属性与其他类的关系，低耦合，高内聚；继承是父类和子类的关系，多态说">
-<meta property="og:type" content="article">
-<meta property="og:title" content="面试题">
-<meta property="og:url" content="http://example.com/2023/04/03/%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Java面向对象有哪些特征，如何应用​		面向对象编程是利用类和对象编程的一种思想。万物可归类，类是对于世界事物的高度抽象 ，不同的事物之间有不同的关系 ，一个类自身与外界的封装关系，一个父类和子类的继承关系， 一个类和多个类的多态关系。万物皆对象，对象是具体的世界事物，面向对象的三大特征封装，继承，多态。封装，封装说明一个类行为和属性与其他类的关系，低耦合，高内聚；继承是父类和子类的关系，多态说">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/Java7_HashMap.jpg?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/Java8_HashMap.jpg?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/%E9%87%8D%E8%BD%BD%E5%92%8C%E9%87%8D%E5%86%99%E7%9A%84%E5%8C%BA%E5%88%AB.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/StringBuilder.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/HashMap1.7hashcodequals.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/1621414916379-1621752756248.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/1621414931120-1621752756248.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/1621414949373.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/1621415056875.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/1621415081690.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/1621415094318.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20201109173809704.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20201109173855168.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/springmvc%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B.jpg?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/%E6%95%B0%E6%8D%AE%E6%A1%88%E4%BE%8B.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/1.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/2.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/3.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210520143604440.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210520143717928.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210520143742317.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/%E4%B8%BB%E4%BB%8E%E5%8E%9F%E7%90%86.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/bytecode.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/bytecode2.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/bytecodeversion.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/changlangchi.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/access_flag.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/field.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/method.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/class-int.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/javammode.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/classloader.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/classloader2.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/before.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/copy.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/3-1621487892206.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/gcollector.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/serial.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/parnew.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/serial-old.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/cms.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/cms2.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/g1.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/life.jpg?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/threadlocal.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/1.7ConcurrentHashMap.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/ConCurrentHashMap.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210521124236027.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/4-6%20%E8%AE%A1%E6%95%B0%E5%99%A8%E7%AE%97%E6%B3%95-1621753094321.jpg?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/4-7%20%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%AE%97%E6%B3%95-1621753118270.jpg?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/10-4%20CAP%E6%BC%94%E7%A4%BA-1617721637028.jpg?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/success.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/fail.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210521230854476-1621753201509.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210521230904203-1621753201509.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210521230912365-1621753201509.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210521230919795-1621753201509.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210522125830646.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/o_update1.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/o_update2.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210522172654370.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210520130119426.png?lastModify=1680514247">
-<meta property="og:image" content="file:///Users/dingxindong/hexo/source/_posts/images/image-20210520130410868.png?lastModify=1680514247">
-<meta property="article:published_time" content="2023-04-03T09:23:56.000Z">
-<meta property="article:modified_time" content="2023-04-03T09:33:14.096Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="file:///Users/dingxindong/hexo/source/_posts/images/Java7_HashMap.jpg?lastModify=1680514247">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>面试题 | Hexo</title>
+        <meta name="author" content="John Doe" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+        <link rel="icon" href="/images/avatar.jpg" />
+        <script src="https://cdn.staticfile.org/vue/3.2.47/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.3.0/css/all.min.css" />
+<link rel="stylesheet" href="/css/fonts.min.css" />
+<script> const mixins = {}; </script>
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
+<script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div id="layout">
+            <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+            </transition>
+            <nav id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <div class="desktop-menu">
+        <a class="title" href="/">
+            <span>HEXO</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+    <div id="mobile-menu">
+        <div class="curtain" @click="shouMenuItems = !shouMenuItems" v-show="shouMenuItems"></div>
+        <div class="title" @click="shouMenuItems = !shouMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;HEXO</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="shouMenuItems">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
     </div>
-  </div>
-</header>
+</nav>
 
-      <div class="outer">
-        <section id="main"><article id="post-面试题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/03/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="article-date">
-  <time class="dt-published" datetime="2023-04-03T09:23:56.000Z" itemprop="datePublished">2023-04-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            <transition name="into">
+            <div id="main" v-show="!loading">
+                <div class="article">
+    <div>
+        <h1>面试题</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/4/3
+        </span>
         
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      面试题
-    </h1>
-  
-
-      </header>
+        
+    </div>
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
+    <div class="content" v-pre>
         <h1 id="Java面向对象有哪些特征，如何应用"><a href="#Java面向对象有哪些特征，如何应用" class="headerlink" title="Java面向对象有哪些特征，如何应用"></a><strong>Java面向对象有哪些特征，如何应用</strong></h1><p>​		面向对象编程是利用类和对象编程的一种思想。万物可归类，类是对于世界事物的高度抽象 ，不同的事物之间有不同的关系 ，一个类自身与外界的封装关系，一个父类和子类的继承关系， 一个类和多个类的多态关系。万物皆对象，对象是具体的世界事物，面向对象的三大特征封装，继承，多态。封装，封装说明一个类行为和属性与其他类的关系，低耦合，高内聚；继承是父类和子类的关系，多态说的是类与类的关系。</p>
 <p>​		封装隐藏了类的内部实现机制，可以在不影响使用的情况下改变类的内部结构，同时也保护了数据。对外界而已它的内部细节是隐藏的，暴露给外界的只是它的访问方法。属性的封装：使用者只能通过事先定制好的方法来访问数据，可以方便地加入逻辑控制，限制对属性的 不合理操作；方法的封装：使用者按照既定的方式调用方法，不必关心方法的内部实现，便于使用； 便于修改，增强 代码的可维护性；</p>
 <p>​		继承是从已有的类中派生出新的类，新的类能吸收已有类的数据属性和行为，并能扩展新的能力。在本质上是特殊~一般的关系，即常说的is-a关系。子类继承父类，表明子类是一种特殊的父类，并且具有父类所不具有的一些属性或方法。从多种实现类中抽象出一个基类，使其具备多种实现类的共同特性 ，当实现类用extends关键字继承了基类（父类）后，实现类就具备了这些相同的属性。继承的类叫做子类（派生类或者超类），被继承的类叫做父类（或者基类）。比如从猫类、狗类、虎类中可以抽象出一个动物类，具有和猫、狗、虎类的共同特性（吃、跑、叫等）。Java通过extends关键字来实现继承，父类中通过private定义的变量和方法不会被继承，不能在子类中直接操作父类通过private定义的变量以及方法。继承避免了对一般类和特殊类之间共同特征进行的重复描述，通过继承可以清晰地表达每一项共同特征所适应的概念范围，在一般类中定义的属性和操作适应于这个类本身以及它以下的每一层特殊类的全部对象。运用继承原则使得系统模型比较简练也比较清晰。</p>
@@ -2444,117 +2443,51 @@
 <p>串行化回调调度</p>
 <p>分布式调度等</p>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/03/%E9%9D%A2%E8%AF%95%E9%A2%98/" data-id="clg0mmykq0000y774e3rve69t" data-title="面试题" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
     
-<nav id="article-nav">
-  
-  
-    <a href="/2023/04/03/%E6%B5%8B%E8%AF%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">测试</div>
-    </a>
-  
-</nav>
+    
+    
+    
+    
+    
+    
+</div>
 
-  
-</article>
-
-
-</section>
+                <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2023 Hexo
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;John Doe
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li></ul>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/04/03/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/03/%E6%B5%8B%E8%AF%95/">测试</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/03/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+            </div>
+            </transition>
+            
+            <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+            </transition>
+            
+        </div>
+        <script src="/js/main.js"></script>
+        
+        
 
 
 
 
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
+        
+    </body>
 </html>
