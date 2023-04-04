@@ -36,7 +36,7 @@ jobs:
         npm i
         # 拉取主题代码
         rm -rf themes/*
-        git clone https://github.com/dingxind/hexo.git hexo
+        git clone https://github.com/dingxind/hexo.git themes/hexo
         
   
     - name: Deploy
