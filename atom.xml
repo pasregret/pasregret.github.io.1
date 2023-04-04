@@ -3,11 +3,11 @@
   <title>解忧杂货铺</title>
   
   
-  <link href="https://dingxind.github.io/atom.xml" rel="self"/>
+  <link href="http://example.com/atom.xml" rel="self"/>
   
-  <link href="https://dingxind.github.io/"/>
+  <link href="http://example.com/"/>
   <updated>2023-04-03T11:09:06.231Z</updated>
-  <id>https://dingxind.github.io/</id>
+  <id>http://example.com/</id>
   
   <author>
     <name>時念</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>测试图片</title>
-    <link href="https://dingxind.github.io/2023/04/03/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/"/>
-    <id>https://dingxind.github.io/2023/04/03/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</id>
+    <link href="http://example.com/2023/04/03/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/"/>
+    <id>http://example.com/2023/04/03/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</id>
     <published>2023-04-03T11:05:57.000Z</published>
     <updated>2023-04-03T11:09:06.231Z</updated>
     
@@ -35,14 +35,14 @@
     
     
     
-    <category term="测试" scheme="https://dingxind.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>复习题目</title>
-    <link href="https://dingxind.github.io/2023/04/03/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    <id>https://dingxind.github.io/2023/04/03/%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+    <link href="http://example.com/2023/04/03/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>http://example.com/2023/04/03/%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
     <published>2023-04-03T09:23:56.000Z</published>
     <updated>2023-04-03T11:35:41.294Z</updated>
     
@@ -54,14 +54,14 @@
     
     
     
-    <category term="题目" scheme="https://dingxind.github.io/tags/%E9%A2%98%E7%9B%AE/"/>
+    <category term="题目" scheme="http://example.com/tags/%E9%A2%98%E7%9B%AE/"/>
     
   </entry>
   
   <entry>
     <title>测试</title>
-    <link href="https://dingxind.github.io/2023/04/03/%E6%B5%8B%E8%AF%95/"/>
-    <id>https://dingxind.github.io/2023/04/03/%E6%B5%8B%E8%AF%95/</id>
+    <link href="http://example.com/2023/04/03/%E6%B5%8B%E8%AF%95/"/>
+    <id>http://example.com/2023/04/03/%E6%B5%8B%E8%AF%95/</id>
     <published>2023-04-03T09:17:03.000Z</published>
     <updated>2023-04-03T11:46:40.144Z</updated>
     
@@ -73,7 +73,7 @@
     
     
     
-    <category term="测试" scheme="https://dingxind.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
